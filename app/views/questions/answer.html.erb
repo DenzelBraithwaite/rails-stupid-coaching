@@ -1,8 +1,15 @@
-<h1>test</h1>
+<div class="container">
+<h1>Coach Convo</h1>
+<p class="dialogue"><%= @question %></p>
+<p> -you</p>
 <% if @question.downcase == "i am going to work" %>
-<%= "Great!" %>
+<p class="coach-response"><%= "Great!" %></p>
 <% elsif @question.last == "?" %>
-<%=  "Silly question, get dressed and go to work!"%>
+<p class="coach-response"><%= "Silly question, get dressed and go to work!" %></p>
+<p>- coach</p>
 <% else %>
-<%= "I don't care, get dressed and go to work!" %>
+<p class="coach-response"><%= "I don't care, get dressed and go to work!" %></p>
 <% end %>
+
+<h3 class="button" ><%= link_to "Ask another question", ask_path %></h3>
+</div>

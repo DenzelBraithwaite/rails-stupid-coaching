@@ -1,3 +1,56 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+ // Defining a variable
+ $light_gray: rgb(128, 128, 128);
+ $light_yellow: rgb(240, 240, 123);
+
+body {
+  margin: 0;
+}
+
+h3 {
+padding: 0;
+}
+
+.container  {
+  // display: flex;
+  // flex-flow: column wrap;
+  // align-items: flex-start;
+  width: 50%;
+  margin: 0;
+  text-align: left;
+}
+
+ .dialogue {
+  padding-top: 4px;
+  padding-bottom: 0;
+  border-left: 8px solid $light_gray;
+  font-size: 2rem;
+}
+
+.coach-response {
+  border-left: 8px solid $light_gray;
+  font-size: 2rem;
+  background-color: $light_yellow;
+  padding: 0;
+}
+
+.button {
+  padding: 4px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: rgb(51, 122, 183);
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.seach {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
